@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ringo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container position-relative">
+        <a href="./index.html">
+          <img class="logo" src="./public/img/logo.png" alt="Ringo" />
+        </a>
+        <nav>
+          <ul class="d-flex">
+            <li><a href="#">活顏翠蘋靚眼精華</a></li>
+            <li><a href="#">品牌故事</a></li>
+            <li class="active"><a href="#">點數兌換</a></li>
+            <li><a href="#">會員中心</a></li>
+          </ul>
+        </nav>
+        <div class="right">
+          <div class="icon-box">
+            <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
+            <!-- <a href="#"><img src="./public/img/user.svg" alt="" /></a> -->
+            <a href="#"><img src="./public/img/user-active.svg" alt=""/></a>
+            <a href="#"><img src="./public/img/cart.svg" alt="" /></a>
+            <a href="#">
+              <img src="./public/img/earth.svg" alt="" />
+              <span>繁體中文</span>
+            </a>
+          </div>
+          <form class="search d-flex">
+            <input type="text" placeholder="搜尋" />
+            <button>
+              <img src="./public/img/search.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div class="join-member">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <ul class="list-box">
+                <li class="list-title">會員中心</li>
+                <li class="active"><a href="#">加入會員</a></li>
+                <li><a href="#">忘記密碼</a></li>
+                <li><a href="#">訂單點數查詢</a></li>
+                <li><a href="#">會員條款</a></li>
+                <li><a href="#">隱私權政策</a></li>
+              </ul>
+            </div>
+            <div class="col-9">
+              <div class="jb">
+                <div class="tab d-flex">
+                  <button class="active login">
+                    <p>Login in / 會員登入</p>
+                    <p>登入RINGO會員即可快速結帳</p>
+                  </button>
+                  <button class="signup">
+                    <p>Sign up / 註冊會員</p>
+                    <p>加入RINGO會員可以隨時接收到新的資訊</p>
+                  </button>
+                </div>
+                <form class="member-form login">
+                  <button class="fb-login">使用FACEBOOK帳號登入</button>
+                  <p>OR</p>
+                  <div class="input-box">
+                    <label>電子信箱</label>
+                    <input type="email" />
+                  </div>
+                  <div class="input-box">
+                    <label>密碼</label>
+                    <input type="password" />
+                  </div>
+                  <div class="veri-box">
+                    <label>驗證碼</label>
+                    <input type="number" />
+                  </div>
+                  <div class="cb d-flex">
+                    <div class="check d-flex">
+                      <div class="check-box">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>記住帳號</span>
+                    </div>
+                    <div class="check d-flex">
+                      <div class="check-box">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>忘記密碼</span>
+                    </div>
+                  </div>
+                  <button class="output-btn">開始購物吧！</button>
+                </form>
+                <form class="member-form signup">
+                  <button class="fb-login">使用FACEBOOK帳號註冊</button>
+                  <p>OR</p>
+                  <div class="input-box">
+                    <label>用戶名稱</label>
+                    <input type="text" />
+                  </div>
+                  <div class="input-box">
+                    <label>電子信箱</label>
+                    <input type="email" />
+                  </div>
+                  <div class="input-box password-box">
+                    <label>密碼</label>
+                    <input type="password" />
+                    <p>至少8個字元</p>
+                  </div>
+                  <div class="input-box">
+                    <label>生日(YYYY/MM/DD)</label>
+                    <input type="date" />
+                  </div>
+                  <div class="input-box">
+                    <label>手機</label>
+                    <input type="number" />
+                  </div>
+                  <div class="cb">
+                    <div class="check d-flex">
+                      <div class="check-box">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span
+                        >我想要收到有關於RINGO的優惠資訊，訂閱電子報及簡訊通知</span
+                      >
+                    </div>
+                    <div class="check d-flex">
+                      <div class="check-box">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>我同意網站服務條款及隱私政策</span>
+                    </div>
+                  </div>
+                  <button class="output-btn">立即加入</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <nav class="col-9">
+            <ul class="row footer-nav">
+              <li class="col-4">
+                <h5>會員中心</h5>
+                <ul>
+                  <li><a href="#">訂單查詢</a></li>
+                  <li><a href="#">忘記密碼</a></li>
+                  <li><a href="#">會員條款</a></li>
+                  <li><a href="#">隱私權政策</a></li>
+                </ul>
+              </li>
+              <li class="col-4">
+                <h5>購物須知</h5>
+                <ul>
+                  <li><a href="#">付款方式</a></li>
+                  <li><a href="#">運送方式</a></li>
+                  <li><a href="#">售後服務</a></li>
+                  <li><a href="#">常見問題Q&A</a></li>
+                </ul>
+              </li>
+              <li class="col-4">
+                <h5>聯絡我們</h5>
+                <p>service@email.com</p>
+                <ul class="d-flex">
+                  <li><img src="./public/img/fb.svg" alt="" /></li>
+                  <li><img src="./public/img/line.svg" alt="" /></li>
+                  <li><img src="./public/img/ig.svg" alt="" /></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="fans col-3">
+            <div>
+              <p>FACEBOOK粉絲團</p>
+            </div>
+          </div>
+          <p class="col-12 copyright">© 2021 RINGO ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/69fd600045.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>
