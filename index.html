@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ringo</title>
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container position-relative">
+        <a href="./index.html">
+          <img class="logo" src="./public/img/logo.png" alt="Ringo" />
+        </a>
+        <nav>
+          <ul class="d-flex">
+            <li><a href="#">活顏翠蘋靚眼精華</a></li>
+            <li><a href="#">品牌故事</a></li>
+            <li><a href="#">點數兌換</a></li>
+            <li><a href="#">會員中心</a></li>
+          </ul>
+        </nav>
+        <div class="right">
+          <div class="icon-box">
+            <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
+            <a href="#"><img src="./public/img/user.svg" alt="" /></a>
+            <a href="#"><img src="./public/img/cart.svg" alt="" /></a>
+            <a href="#">
+              <img src="./public/img/earth.svg" alt="" />
+              <span>繁體中文</span>
+            </a>
+          </div>
+          <form class="search d-flex">
+            <input type="text" placeholder="搜尋" />
+            <button>
+              <img src="./public/img/search.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- banner -->
+    <section class="banner position-relative">
+      <img
+        class="bg-pic"
+        src="./public/img/index_banner.png"
+        alt="活顏翠蘋靚眼精華"
+      />
+      <div class="text position-absolute">
+        <h1>活顏翠蘋靚眼精華</h1>
+        <p>不只是保養品更是肌膚的營養品</p>
+      </div>
+    </section>
+    <!-- bubble-box -->
+    <section class="bubble-box">
+      <img class="bg-pic" src="./public/img/index_pic_1.png" alt="" />
+      <div class="bb bb-1">
+        <div class="bubble bubb-1">
+          <p>清爽不黏膩</p>
+        </div>
+      </div>
+      <div class="bb bb-2">
+        <div class="bubble bubb-2">
+          <p>不長肉芽</p>
+        </div>
+      </div>
+      <div class="bb bb-3">
+        <div class="bubble bubb-3">
+          <p>輕柔呵護眼周脆弱肌膚</p>
+        </div>
+      </div>
+    </section>
+    <!-- 3大營養精華 -->
+    <section class="nutrition position-relative">
+      <img class="bg-pic" src="./public/img/index_pic_2.png" alt="" />
+      <h3 class="title"><span>3</span><span>大營養精華</span></h3>
+      <div class="circle-box cb-1">
+        <div class="cb">
+          <h4>蘋果萃取物</h4>
+          <p>
+            來自於瑞士萃取大廠特殊技術取得，能有效增加皮膚幹細胞的活力和壽命，保護皮膚幹細胞抵禦環境壓力帶來的傷害，從而達到延緩肌膚衰老的功效。且永續生態取向，還可以在不斷砍伐、維持生態平衡的狀況下培育萃取精華。
+          </p>
+        </div>
+      </div>
+      <div class="circle-box cb-2">
+        <div class="cb">
+          <h4>乙醯化玻尿酸<br />配大分子</h4>
+          <p>
+            玻尿酸可強化保濕度，<br />提供角質層足夠水分，<br />使肌膚不會缺水衰老
+          </p>
+        </div>
+      </div>
+      <div class="circle-box cb-3">
+        <div class="cb">
+          <h4>洋甘菊精油</h4>
+          <p>
+            花朵的樣子類似雛菊，聞起來有蘋果的香氣羅馬洋甘菊對於肌膚、身心也具有療癒與安撫的作用，夜間使用有助於安定神清，放鬆一整天的疲勞。
+          </p>
+        </div>
+      </div>
+      <img class="drip" src="./public/img/drip.png" alt="" />
+    </section>
+    <!-- 好評推薦 -->
+    <section class="recc position-relative">
+      <h3 class="title position-absolute">好評推薦</h3>
+      <img src="./public/img/index_pic_3.png" alt="" />
+    </section>
+    <section class="join">
+      <form class="join-box">
+        <p>《請從下拉選單選取一種品項》</p>
+        <select class="top-select">
+          <option selected value="填寫資料立即送500元購物金">
+            填寫資料立即送500元購物金
+          </option>
+        </select>
+        <h4>即刻加入會員拿優惠!<span>《請填寫以下資料，以便寄送》</span></h4>
+        <div class="form-item">
+          <label>姓名</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-item fi-addr">
+          <label>寄送地址</label>
+          <div role="tw-city-selector" class="city-selector-set">
+            <div>
+              <select class="county"></select>
+            </div>
+            <div>
+              <select class="district"></select>
+            </div>
+          </div>
+          <div class="addr-box">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="form-item">
+          <label>性別</label>
+          <select>
+            <option selected value="女性">女性</option>
+            <option value="男性">男性</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label>聯絡電話</label>
+          <input type="phone" id="phone" />
+        </div>
+        <div class="form-item fi-birth">
+          <label>生日</label>
+          <input type="date" id="birthday" />
+          <span>(YYYY/MM/DD)</span>
+        </div>
+        <div class="form-item">
+          <label>電子信箱</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="form-item fi-check">
+          <label></label>
+          <div class="cb">
+            <div class="check d-flex">
+              <div class="check-box">
+                <i class="fas fa-check"></i>
+              </div>
+              <span>我想收到有關RINGO的優惠資訊，訂閱電子報及簡訊通知</span>
+            </div>
+            <div class="check d-flex">
+              <div class="check-box">
+                <i class="fas fa-check"></i>
+              </div>
+              <span>我同意網站服務條款及隱私政策</span>
+            </div>
+          </div>
+        </div>
+        <button>確認送出</button>
+      </form>
+    </section>
+    <footer>
+      <div class="container">
+          <div class="row">
+        <nav class="col-9">
+          <ul class="row footer-nav">
+            <li class="col-4">
+              <h5>會員中心</h5>
+              <ul>
+                <li><a href="#">訂單查詢</a></li>
+                <li><a href="#">忘記密碼</a></li>
+                <li><a href="#">會員條款</a></li>
+                <li><a href="#">隱私權政策</a></li>
+              </ul>
+            </li>
+            <li class="col-4">
+              <h5>購物須知</h5>
+              <ul>
+                <li><a href="#">付款方式</a></li>
+                <li><a href="#">運送方式</a></li>
+                <li><a href="#">售後服務</a></li>
+                <li><a href="#">常見問題Q&A</a></li>
+              </ul>
+            </li>
+            <li class="col-4">
+              <h5>聯絡我們</h5>
+              <p>service@email.com</p>
+              <ul class="d-flex">
+                <li><img src="./public/img/fb.svg" alt="" /></li>
+                <li><img src="./public/img/line.svg" alt="" /></li>
+                <li><img src="./public/img/ig.svg" alt="" /></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="fans col-3">
+            <div>
+          <p>FACEBOOK粉絲團</p>
+        </div>
+        </div>
+        <p class="col-12 copyright">© 2021 RINGO ALL RIGHTS RESERVED.</p>
+    </div>
+      </div>
+    </footer>
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/69fd600045.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/js/tw-city-selector/tw-city-selector.js"></script>
+    <script>
+      new TwCitySelector({
+        el: ".city-selector-set",
+        elCounty: ".county",
+        elDistrict: ".district",
+      });
+    </script>
+  </body>
+</html>
