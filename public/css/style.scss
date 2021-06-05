@@ -19,6 +19,12 @@
   height: 35px;
 }
 
+@mixin main-text {
+  line-height: 2.5;
+  font-size: 18px;
+  margin: 0;
+}
+
 $main-color: #d39597;
 $main-my: 70px;
 
@@ -131,6 +137,23 @@ header {
           width: 25px;
           margin: 0 10px;
         }
+        .cart-box {
+          display: inline-block;
+          position: relative;
+          .buy-num {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: $main-color;
+            color: #fff;
+            bottom: 0;
+            right: 0;
+            line-height: 18px;
+            text-align: center;
+            font-size: 13px;
+          }
+        }
       }
       .search {
         margin-top: 40px;
@@ -175,6 +198,11 @@ footer {
           img {
             width: 35px;
             margin-right: 10px;
+          }
+          &.active {
+            a {
+              color: $main-color;
+            }
           }
         }
       }
@@ -277,6 +305,78 @@ footer {
   font-size: 24px;
   color: $main-color;
   border-bottom: 1px solid #000;
+}
+
+.order-table {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid $main-color;
+  > div {
+    align-items: stretch;
+    > div {
+      padding: 10px 0;
+      p {
+        text-align: center;
+        margin: 0;
+      }
+    }
+    &.title-box {
+      >div {
+        background-color: $main-color;
+        border-right:1px solid #fff;
+        p {
+          color: #fff;
+        }
+      }
+      >div:last-child {
+        border-right:0;
+      }
+    }
+    &.content-box {
+      >div {
+        border-right:1px solid $main-color;
+      }
+      >div:last-child {
+        border-right:0;
+      }
+    }
+  }
+}
+
+.text-table {
+  width: 100%;
+  tr {
+    td {
+      padding: 8px 0;
+      vertical-align: top;
+      line-height: 2.5;
+    }
+    td:first-child {
+      width: 25px;
+    }
+    td:nth-child(2) {
+      width: calc(100% - 25px);
+    }
+  }
+}
+
+.mb {
+  height: 40px;
+  border: 1px solid #000;
+  button {
+    width: 40px;
+    height: 100%;
+    background-color: #cccccc;
+    img {
+      width: 50%;
+    }
+  }
+  input {
+    width: calc(100% - 80px);
+    border: 0;
+    height: 100%;
+    text-align: center;
+  }
 }
 
 // customerize
@@ -574,22 +674,6 @@ footer {
           margin-bottom: 20px;
           .mb {
             width: 49%;
-            height: 40px;
-            border: 1px solid #000;
-            button {
-              width: 40px;
-              height: 100%;
-              background-color: #cccccc;
-              img {
-                width: 50%;
-              }
-            }
-            input {
-              width: calc(100% - 80px);
-              border: 0;
-              height: 100%;
-              text-align: center;
-            }
           }
         }
         .btn-box {
@@ -680,24 +764,6 @@ footer {
         padding: 10px 40px;
         background-color: $main-color;
         color: #fff;
-      }
-    }
-  }
-  .method {
-    table {
-      width: 100%;
-      tr {
-        td {
-          padding: 8px 0;
-          vertical-align: top;
-          line-height: 2.5;
-        }
-        td:first-child {
-          width: 25px;
-        }
-        td:nth-child(2) {
-          width: calc(100% - 25px);
-        }
       }
     }
   }
@@ -853,20 +919,145 @@ footer {
         margin-bottom: 20px;
       }
       .order-table {
-        margin-bottom: 20px;
-        border: 1px solid $main-color;
         width: 100%;
-        .ot {
-            width: 100%;
+        > div {
+          width: 100%;
           > div {
-            padding: 10px 0;
             width: 25%;
-            p {
-              text-align: center;
-              margin: 0;
-            }
           }
         }
+      }
+      .detail {
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+.order-detail {
+  margin-top: $main-my;
+  margin-bottom: $main-my;
+  .od {
+    position: relative;
+    background-color: #fff;
+    padding: 20px 30px;
+    .delete {
+      width: 20px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .detail-title {
+      font-size: 18px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #000;
+    }
+    .order-inform {
+      .text {
+        p {
+          color: $main-color;
+        }
+      }
+    }
+    .order-table {
+      width: 100%;
+      &.about-order {
+        >div {
+          >div {
+            width: 25%;
+          }
+        }
+      }
+      &.about-product {
+        >div {
+          &.content-box {
+            >div {
+              height: 0;
+              padding-bottom: 25%;
+              position: relative;
+              img {
+                width: 95%;
+              }
+              p {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+              }
+            }
+          }
+          >div:first-child {
+            width: 15%;
+          }
+          >div:nth-child(2) {
+            width: 35%;
+          }
+          >div:nth-child(3) {
+            width: calc(50%/3);
+          }
+          >div:nth-child(4) {
+            width: calc(50%/3);
+          }
+          >div:nth-child(5) {
+            width: calc(50%/3);
+          }
+        }
+      }
+      &.about-money {
+        >div {
+          >div:first-child {
+            width: calc(50%/3);
+          }
+          >div:nth-child(2) {
+            width: calc(50%/3);
+          }
+          >div:nth-child(3) {
+            width: calc(50%/3);
+          }
+          >div:nth-child(4) {
+            width: 25%;
+          }
+          >div:nth-child(5) {
+            width: 25%;
+          }
+        }
+      }
+      &.remark {
+        >div {
+          >div {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .client-inform {
+      border-top: 2px solid #000;
+      padding-top: 20px;
+      h5 {
+        font-size: 22px;
+        color: $main-color;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+.term-box {
+  margin-top: $main-my;
+  margin-bottom: $main-my;
+  .tb {
+    .text-box {
+      margin-top: 10px;
+      margin-bottom: 40px;
+      p {
+        @include main-text;
       }
     }
   }

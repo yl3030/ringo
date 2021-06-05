@@ -128,6 +128,25 @@ header .container .right .icon-box img {
   margin: 0 10px;
 }
 
+header .container .right .icon-box .cart-box {
+  display: inline-block;
+  position: relative;
+}
+
+header .container .right .icon-box .cart-box .buy-num {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #d39597;
+  color: #fff;
+  bottom: 0;
+  right: 0;
+  line-height: 18px;
+  text-align: center;
+  font-size: 13px;
+}
+
 header .container .right .search {
   margin-top: 40px;
   width: 100%;
@@ -184,6 +203,10 @@ footer .footer-nav > li ul li {
 footer .footer-nav > li ul li img {
   width: 35px;
   margin-right: 10px;
+}
+
+footer .footer-nav > li ul li.active a {
+  color: #d39597;
 }
 
 footer .fans div {
@@ -284,6 +307,88 @@ footer .copyright {
   font-size: 24px;
   color: #d39597;
   border-bottom: 1px solid #000;
+}
+
+.order-table {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #d39597;
+}
+
+.order-table > div {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.order-table > div > div {
+  padding: 10px 0;
+}
+
+.order-table > div > div p {
+  text-align: center;
+  margin: 0;
+}
+
+.order-table > div.title-box > div {
+  background-color: #d39597;
+  border-right: 1px solid #fff;
+}
+
+.order-table > div.title-box > div p {
+  color: #fff;
+}
+
+.order-table > div.title-box > div:last-child {
+  border-right: 0;
+}
+
+.order-table > div.content-box > div {
+  border-right: 1px solid #d39597;
+}
+
+.order-table > div.content-box > div:last-child {
+  border-right: 0;
+}
+
+.text-table {
+  width: 100%;
+}
+
+.text-table tr td {
+  padding: 8px 0;
+  vertical-align: top;
+  line-height: 2.5;
+}
+
+.text-table tr td:first-child {
+  width: 25px;
+}
+
+.text-table tr td:nth-child(2) {
+  width: calc(100% - 25px);
+}
+
+.mb {
+  height: 40px;
+  border: 1px solid #000;
+}
+
+.mb button {
+  width: 40px;
+  height: 100%;
+  background-color: #cccccc;
+}
+
+.mb button img {
+  width: 50%;
+}
+
+.mb input {
+  width: calc(100% - 80px);
+  border: 0;
+  height: 100%;
+  text-align: center;
 }
 
 .banner .text {
@@ -644,25 +749,6 @@ footer .copyright {
 
 .product .product-box .buy-inform .product-detail .num-box .mb {
   width: 49%;
-  height: 40px;
-  border: 1px solid #000;
-}
-
-.product .product-box .buy-inform .product-detail .num-box .mb button {
-  width: 40px;
-  height: 100%;
-  background-color: #cccccc;
-}
-
-.product .product-box .buy-inform .product-detail .num-box .mb button img {
-  width: 50%;
-}
-
-.product .product-box .buy-inform .product-detail .num-box .mb input {
-  width: calc(100% - 80px);
-  border: 0;
-  height: 100%;
-  text-align: center;
 }
 
 .product .product-box .buy-inform .product-detail .btn-box {
@@ -770,24 +856,6 @@ footer .copyright {
   padding: 10px 40px;
   background-color: #d39597;
   color: #fff;
-}
-
-.point .method table {
-  width: 100%;
-}
-
-.point .method table tr td {
-  padding: 8px 0;
-  vertical-align: top;
-  line-height: 2.5;
-}
-
-.point .method table tr td:first-child {
-  width: 25px;
-}
-
-.point .method table tr td:nth-child(2) {
-  width: calc(100% - 25px);
 }
 
 .join-member {
@@ -986,22 +1054,149 @@ footer .copyright {
 }
 
 .point-check .record-box .record .order-table {
-  margin-bottom: 20px;
-  border: 1px solid #d39597;
   width: 100%;
 }
 
-.point-check .record-box .record .order-table .ot {
+.point-check .record-box .record .order-table > div {
   width: 100%;
 }
 
-.point-check .record-box .record .order-table .ot > div {
-  padding: 10px 0;
+.point-check .record-box .record .order-table > div > div {
   width: 25%;
 }
 
-.point-check .record-box .record .order-table .ot > div p {
-  text-align: center;
+.point-check .record-box .record .detail:hover {
+  color: #d39597;
+}
+
+.order-detail {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.order-detail .od {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+
+.order-detail .od .delete {
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.order-detail .od .detail-title {
+  font-size: 18px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.order-detail .od .order-inform .text p {
+  color: #d39597;
+}
+
+.order-detail .od .order-table {
+  width: 100%;
+}
+
+.order-detail .od .order-table.about-order > div > div {
+  width: 25%;
+}
+
+.order-detail .od .order-table.about-product > div.content-box > div {
+  height: 0;
+  padding-bottom: 25%;
+  position: relative;
+}
+
+.order-detail .od .order-table.about-product > div.content-box > div img {
+  width: 95%;
+}
+
+.order-detail .od .order-table.about-product > div.content-box > div p {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order-detail .od .order-table.about-product > div > div:first-child {
+  width: 15%;
+}
+
+.order-detail .od .order-table.about-product > div > div:nth-child(2) {
+  width: 35%;
+}
+
+.order-detail .od .order-table.about-product > div > div:nth-child(3) {
+  width: calc(50%/3);
+}
+
+.order-detail .od .order-table.about-product > div > div:nth-child(4) {
+  width: calc(50%/3);
+}
+
+.order-detail .od .order-table.about-product > div > div:nth-child(5) {
+  width: calc(50%/3);
+}
+
+.order-detail .od .order-table.about-money > div > div:first-child {
+  width: calc(50%/3);
+}
+
+.order-detail .od .order-table.about-money > div > div:nth-child(2) {
+  width: calc(50%/3);
+}
+
+.order-detail .od .order-table.about-money > div > div:nth-child(3) {
+  width: calc(50%/3);
+}
+
+.order-detail .od .order-table.about-money > div > div:nth-child(4) {
+  width: 25%;
+}
+
+.order-detail .od .order-table.about-money > div > div:nth-child(5) {
+  width: 25%;
+}
+
+.order-detail .od .order-table.remark > div > div {
+  width: 100%;
+}
+
+.order-detail .od .client-inform {
+  border-top: 2px solid #000;
+  padding-top: 20px;
+}
+
+.order-detail .od .client-inform h5 {
+  font-size: 22px;
+  color: #d39597;
+  margin-bottom: 20px;
+}
+
+.order-detail .od .client-inform p {
+  margin-left: 25px;
+}
+
+.term-box {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.term-box .tb .text-box {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.term-box .tb .text-box p {
+  line-height: 2.5;
+  font-size: 18px;
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

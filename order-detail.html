@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ringo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+        <div class="container position-relative">
+          <a href="./index.html">
+            <img class="logo" src="./public/img/logo.png" alt="Ringo" />
+          </a>
+          <nav>
+            <ul class="d-flex">
+              <li><a href="#">活顏翠蘋靚眼精華</a></li>
+              <li><a href="#">品牌故事</a></li>
+              <li class="active"><a href="#">點數兌換</a></li>
+              <li><a href="#">會員中心</a></li>
+            </ul>
+          </nav>
+          <div class="right">
+            <div class="icon-box">
+              <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
+              <!-- <a href="#"><img src="./public/img/user.svg" alt="" /></a> -->
+              <a href="#"><img src="./public/img/user-active.svg" alt="" /></a>
+              <div class="cart-box">
+                <a href="#"
+                  ><img src="./public/img/cart.svg" alt="" />
+                  <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
+                  <!-- <div class="buy-num">1</div> -->
+                </a>
+              </div>
+              <a href="#">
+                <img src="./public/img/earth.svg" alt="" />
+                <span>繁體中文</span>
+              </a>
+            </div>
+            <form class="search d-flex">
+              <input type="text" placeholder="搜尋" />
+              <button>
+                <img src="./public/img/search.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+    <div class="order-detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <ul class="list-box">
+              <li class="list-title">會員中心</li>
+              <li><a href="#">加入會員</a></li>
+              <li><a href="#">忘記密碼</a></li>
+              <li class="active"><a href="#">訂單點數查詢</a></li>
+              <li><a href="#">會員條款</a></li>
+              <li><a href="#">隱私權政策</a></li>
+            </ul>
+          </div>
+          <div class="col-9">
+            <div class="od">
+              <p class="detail-title">訂單明細</p>
+              <img class="delete" src="./public/img/cross.svg" alt="" />
+              <div class="order-inform">
+                <div class="d-flex text">
+                  <p>訂單資訊</p>
+                  <p>鑑賞期：2020/01/17</p>
+                </div>
+                <div class="order-table about-order">
+                  <div class="title-box table-box d-flex">
+                    <div><p>訂單編號</p></div>
+                    <div><p>訂單日期</p></div>
+                    <div><p>運送方式</p></div>
+                    <div><p>訂單狀態</p></div>
+                  </div>
+                  <div class="content-box table-box d-flex">
+                    <div><p>A0001</p></div>
+                    <div><p>2010/1/10</p></div>
+                    <div><p>宅配</p></div>
+                    <div><p>付款成功已出貨</p></div>
+                  </div>
+                </div>
+                <div class="order-table about-product">
+                  <div class="title-box table-box d-flex">
+                    <div><p>商品圖片</p></div>
+                    <div><p>商品名稱</p></div>
+                    <div><p>商品金額</p></div>
+                    <div><p>點數</p></div>
+                    <div><p>小計</p></div>
+                  </div>
+                  <div class="content-box table-box d-flex">
+                    <div>
+                      <p>
+                        <img
+                          src="./public/img/product.png"
+                          alt="活顏萃蘋眼周精華"
+                        />
+                      </p>
+                    </div>
+                    <div><p>活顏萃蘋眼周精華</p></div>
+                    <div><p>3,980</p></div>
+                    <div><p>3000點</p></div>
+                    <div><p>NT 3980</p></div>
+                  </div>
+                </div>
+                <div class="order-table about-money">
+                  <div class="title-box table-box d-flex">
+                    <div><p>購物金</p></div>
+                    <div><p>電子折價券</p></div>
+                    <div><p>運費</p></div>
+                    <div><p>付款金額</p></div>
+                    <div><p>付款方式</p></div>
+                  </div>
+                  <div class="content-box table-box d-flex">
+                    <div><p>500</p></div>
+                    <div><p>－</p></div>
+                    <div><p>100</p></div>
+                    <div><p>NT3,580</p></div>
+                    <div><p>信用卡線上刷卡</p></div>
+                  </div>
+                </div>
+                <div class="order-table remark">
+                  <div class="title-box table-box d-flex">
+                    <div><p>訂單備註</p></div>
+                  </div>
+                  <div class="content-box table-box d-flex">
+                    <div><p>假日不收貨</p></div>
+                  </div>
+                </div>
+                <div class="client-inform">
+                  <h5>收件人資訊</h5>
+                  <p>購買人：Alex</p>
+                  <p>性 別：男性</p>
+                  <p>電 話：0989-336-280</p>
+                  <p>E-amil：alex79924@gmail.com</p>
+                  <p>地 址：台北市內湖區行善路111巷1號8樓之3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <nav class="col-9">
+            <ul class="row footer-nav">
+              <li class="col-4">
+                <h5>會員中心</h5>
+                <ul>
+                  <li><a href="#">訂單查詢</a></li>
+                  <li><a href="#">忘記密碼</a></li>
+                  <li><a href="#">會員條款</a></li>
+                  <li><a href="#">隱私權政策</a></li>
+                </ul>
+              </li>
+              <li class="col-4">
+                <h5>購物須知</h5>
+                <ul>
+                  <li><a href="#">付款方式</a></li>
+                  <li><a href="#">運送方式</a></li>
+                  <li><a href="#">售後服務</a></li>
+                  <li><a href="#">常見問題Q&A</a></li>
+                </ul>
+              </li>
+              <li class="col-4">
+                <h5>聯絡我們</h5>
+                <p>service@email.com</p>
+                <ul class="d-flex">
+                  <li><img src="./public/img/fb.svg" alt="" /></li>
+                  <li><img src="./public/img/line.svg" alt="" /></li>
+                  <li><img src="./public/img/ig.svg" alt="" /></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="fans col-3">
+            <div>
+              <p>FACEBOOK粉絲團</p>
+            </div>
+          </div>
+          <p class="col-12 copyright">© 2021 RINGO ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/69fd600045.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>

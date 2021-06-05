@@ -25,7 +25,7 @@
           <ul class="d-flex">
             <li><a href="#">活顏翠蘋靚眼精華</a></li>
             <li><a href="#">品牌故事</a></li>
-            <li class="active"><a href="#">點數兌換</a></li>
+            <li><a href="#">點數兌換</a></li>
             <li><a href="#">會員中心</a></li>
           </ul>
         </nav>
@@ -35,10 +35,10 @@
             <!-- <a href="#"><img src="./public/img/user.svg" alt="" /></a> -->
             <a href="#"><img src="./public/img/user-active.svg" alt="" /></a>
             <div class="cart-box">
-              <a href="#"
-                ><img src="./public/img/cart.svg" alt="" />
-                <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
-                <!-- <div class="buy-num">1</div> -->
+              <a href="#">
+                <!-- <img src="./public/img/cart.svg" alt="" /> -->
+                <img src="./public/img/cart-active.svg" alt="" />
+                <div class="buy-num">1</div>
               </a>
             </div>
             <a href="#">
@@ -56,52 +56,74 @@
       </div>
     </header>
 
-    <div class="point">
-        <div class="container">
-          <div class="row">
-            <div class="col-3">
-              <ul class="list-box">
-                <li class="list-title">點數兌換</li>
-                <li><a href="#">兌換內容</a></li>
-                <li class="active"><a href="#">點數兌換方式</a></li>
-              </ul>
-            </div>
-            <div class="col-9">
-              <div class="method">
-                  <h1 class="content-title">RINGO令果會員點數管理及使用辦法</h1>
-                  <table class="text-table">
-                      <tr>
-                          <td>1.</td>
-                          <td>限官網消費每100元可累積1點會員點數。</td>
-                      </tr>
-                      <tr>
-                          <td>2.</td>
-                          <td>點數可使用於官網「點數兌換」頁面所提供之禮品、課程做等值兌換。</td>
-                      </tr>
-                      <tr>
-                          <td>3.</td>
-                          <td>禮品及課程經兌換頁面程序完成後、不接受取消及變更其他項目等需求。</td>
-                      </tr>
-                      <tr>
-                          <td>4.</td>
-                          <td>RINGO 令果品牌方保留變更兌換方式及標準之權利。</td>
-                      </tr>
-                      <tr>
-                          <td>5.</td>
-                          <td>點數僅供客戶於點數有效期間內於本網站上兌換商品或服務、不得要求將點數折算現金或以其他方式給付。</td>
-                      </tr>
-                      <tr>
-                          <td>6.</td>
-                          <td>點數之有效使用期間、自點數生效日起算至第2年年底前有效。<br>
-                              例如：於2021年所累積之點數、最遲於2023年12月31日前需使用完畢、若未於有效使用期間內使用者、點數將自動失效。</td>
-                      </tr>
-                  </table>
-              </div>
-            </div>
-          </div>
+    <div class="step-box d-flex">
+        <div class="step">
+            <div class="num-box">1</div>
+            <p>購物車</p>
         </div>
-      </div>
-    
+        <div class="line"></div>
+        <div class="step">
+            <div class="num-box">2</div>
+            <p>填寫資料</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="num-box">3</div>
+            <p>訂單確認</p>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="cart-content">
+                <h5>購物車（1件）</h5>
+                <div class="order-table">
+                    <div class="title-box table-box d-flex">
+                      <div><p>商品名稱</p></div>
+                      <div><p>優惠</p></div>
+                      <div><p>價格</p></div>
+                      <div><p>數量</p></div>
+                      <div><p>小計</p></div>
+                      <div><p>刪除</p></div>
+                    </div>
+                    <div class="content-box table-box d-flex">
+                      <div><p>
+                          <div class="d-flex">
+                              <div class="pic"></div>
+                              <span>活顏粹蘋靚眼精華</span>
+                          </div>
+                      </p></div>
+                      <div><p></p></div>
+                      <div><p>NT 3980</p></div>
+                      <div><p>
+                        <div class="mb d-flex">
+                            <button class="minus">
+                              <img src="./public/img/minus.svg" alt="" />
+                            </button>
+                            <input type="number" value="1" />
+                            <button class="plus">
+                              <img src="./public/img/plus.svg" alt="" />
+                            </button>
+                          </div>
+                      </p></div>
+                      <div><p>NT 3980</p></div>
+                      <div><p>
+                          <img src="./public/img/trash-can.svg" alt="">
+                      </p></div>
+                    </div>
+                </div>
+                <div class="bonus">
+                <p>已享用之優惠</p>
+                <span>滿額優惠</span><span>滿3000送300點數</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
+</div>
 
     <!-- footer -->
     <footer>
