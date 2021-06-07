@@ -17,21 +17,37 @@
           <img class="logo" src="./public/img/logo.png" alt="Ringo" />
         </a>
         <nav>
-          <ul class="d-flex">
-            <li><a href="#">活顏翠蘋靚眼精華</a></li>
-            <li><a href="#">品牌故事</a></li>
-            <li class="active"><a href="#">點數兌換</a></li>
-            <li><a href="#">會員中心</a></li>
+          <ul class="icon">
+            <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
+            <a href="./join-member.html"><img src="./public/img/user.svg" alt="" /></a>
+            <!-- <a href="./join-member.html"><img src="./public/img/user-active.svg" alt="" /></a> -->
+            <div class="cart-box">
+              <a href="./cart.html">
+                <img src="./public/img/cart.svg" alt="" />
+                <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
+                <!-- <div class="buy-num">1</div> -->
+              </a>
+            </div>
+            <a href="#">
+              <img src="./public/img/earth.svg" alt="" />
+              <span>繁體中文</span>
+            </a>
+          </ul>
+          <ul class="navi d-flex">
+            <li><a href="./pruduct-introduce.html">活顏翠蘋靚眼精華</a></li>
+            <li><a href="./story.html">品牌故事</a></li>
+            <li><a href="./point-content.html">點數兌換</a></li>
+            <li><a href="./join-member.html">會員中心</a></li>
           </ul>
         </nav>
         <div class="right">
           <div class="icon-box">
             <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
-            <!-- <a href="#"><img src="./public/img/user.svg" alt="" /></a> -->
-            <a href="#"><img src="./public/img/user-active.svg" alt="" /></a>
+            <a href="./join-member.html"><img src="./public/img/user.svg" alt="" /></a>
+            <!-- <a href="./join-member.html"><img src="./public/img/user-active.svg" alt="" /></a> -->
             <div class="cart-box">
-              <a href="#"
-                ><img src="./public/img/cart.svg" alt="" />
+              <a href="./cart.html">
+                <img src="./public/img/cart.svg" alt="" />
                 <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
                 <!-- <div class="buy-num">1</div> -->
               </a>
@@ -41,6 +57,7 @@
               <span>繁體中文</span>
             </a>
           </div>
+          <i class="fas fa-bars menu"></i>
           <form class="search d-flex">
             <input type="text" placeholder="搜尋" />
             <button>
@@ -51,65 +68,17 @@
       </div>
     </header>
     <!-- banner -->
-    <section class="banner position-relative">
-      <img
-        class="bg-pic"
-        src="./public/img/index_banner.png"
-        alt="活顏翠蘋靚眼精華"
-      />
-      <div class="text position-absolute">
-        <h1>活顏翠蘋靚眼精華</h1>
-        <p>不只是保養品更是肌膚的營養品</p>
-      </div>
+    <section class="banner">
+      <img class="index-pic" src="./public/img/banner.png" alt="">
     </section>
     <!-- bubble-box -->
     <section class="bubble-box">
-      <img class="bg-pic" src="./public/img/index_pic_1.png" alt="" />
-      <div class="bb bb-1">
-        <div class="bubble bubb-1">
-          <p>清爽不黏膩</p>
-        </div>
-      </div>
-      <div class="bb bb-2">
-        <div class="bubble bubb-2">
-          <p>不長肉芽</p>
-        </div>
-      </div>
-      <div class="bb bb-3">
-        <div class="bubble bubb-3">
-          <p>輕柔呵護眼周脆弱肌膚</p>
-        </div>
-      </div>
+      <img class="index-pic" src="./public/img/index_pic_1.png" alt="">
     </section>
     <!-- 3大營養精華 -->
     <section class="nutrition position-relative">
       <img class="bg-pic" src="./public/img/index_pic_2.png" alt="" />
       <h3 class="title"><span>3</span><span>大營養精華</span></h3>
-      <div class="circle-box cb-1">
-        <div class="cb">
-          <h4>蘋果萃取物</h4>
-          <p>
-            來自於瑞士萃取大廠特殊技術取得，能有效增加皮膚幹細胞的活力和壽命，保護皮膚幹細胞抵禦環境壓力帶來的傷害，從而達到延緩肌膚衰老的功效。且永續生態取向，還可以在不斷砍伐、維持生態平衡的狀況下培育萃取精華。
-          </p>
-        </div>
-      </div>
-      <div class="circle-box cb-2">
-        <div class="cb">
-          <h4>乙醯化玻尿酸<br />配大分子</h4>
-          <p>
-            玻尿酸可強化保濕度，<br />提供角質層足夠水分，<br />使肌膚不會缺水衰老
-          </p>
-        </div>
-      </div>
-      <div class="circle-box cb-3">
-        <div class="cb">
-          <h4>洋甘菊精油</h4>
-          <p>
-            花朵的樣子類似雛菊，聞起來有蘋果的香氣羅馬洋甘菊對於肌膚、身心也具有療癒與安撫的作用，夜間使用有助於安定神清，放鬆一整天的疲勞。
-          </p>
-        </div>
-      </div>
-      <img class="drip" src="./public/img/drip.png" alt="" />
     </section>
     <!-- 好評推薦 -->
     <section class="recc position-relative">
@@ -124,7 +93,7 @@
             填寫資料立即送500元購物金
           </option>
         </select>
-        <h4>即刻加入會員拿優惠!<span>《請填寫以下資料，以便寄送》</span></h4>
+        <h4>即刻加入會員拿優惠!<br><span>《請填寫以下資料，以便寄送》</span></h4>
         <div class="form-item">
           <label>姓名</label>
           <input type="text" id="name" />
@@ -185,46 +154,42 @@
     </section>
     <footer>
       <div class="container">
-          <div class="row">
-        <nav class="col-9">
-          <ul class="row footer-nav">
-            <li class="col-4">
-              <h5>會員中心</h5>
-              <ul>
-                <li><a href="#">訂單查詢</a></li>
-                <li><a href="#">忘記密碼</a></li>
-                <li><a href="#">會員條款</a></li>
-                <li><a href="#">隱私權政策</a></li>
-              </ul>
-            </li>
-            <li class="col-4">
-              <h5>購物須知</h5>
-              <ul>
-                <li><a href="#">付款方式</a></li>
-                <li><a href="#">運送方式</a></li>
-                <li><a href="#">售後服務</a></li>
-                <li><a href="#">常見問題Q&A</a></li>
-              </ul>
-            </li>
-            <li class="col-4">
-              <h5>聯絡我們</h5>
-              <p>service@email.com</p>
-              <ul class="d-flex">
-                <li><img src="./public/img/fb.svg" alt="" /></li>
-                <li><img src="./public/img/line.svg" alt="" /></li>
-                <li><img src="./public/img/ig.svg" alt="" /></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="fans col-3">
-            <div>
-          <p>FACEBOOK粉絲團</p>
-        </div>
-        </div>
-        <p class="col-12 copyright">© 2021 RINGO ALL RIGHTS RESERVED.</p>
-    </div>
-      </div>
+            <ul class="row footer-nav">
+              <li class="col-md-3 col-6">
+                <h5>會員中心</h5>
+                <ul>
+                  <li><a href="./order-check.html">訂單查詢</a></li>
+                  <li><a href="./forget-password.html">忘記密碼</a></li>
+                  <li><a href="./member-term.html">會員條款</a></li>
+                  <li><a href="./privacy.html">隱私權政策</a></li>
+                </ul>
+              </li>
+              <li class="col-md-3 col-6">
+                <h5>購物須知</h5>
+                <ul>
+                  <li><a href="./pay-method.html">付款方式</a></li>
+                  <li><a href="./delivery-method.html">運送方式</a></li>
+                  <li><a href="./service.html">售後服務</a></li>
+                  <li><a href="./QA.html">常見問題Q&A</a></li>
+                </ul>
+              </li>
+              <li class="col-md-3 col-6">
+                <h5>聯絡我們</h5>
+                <p>service@email.com</p>
+                <ul class="d-flex">
+                  <li><a href="#"><img src="./public/img/fb.svg" alt="" /></a></li>
+                  <li><a href="#"><img src="./public/img/line.svg" alt="" /></a></li>
+                  <li><a href="#"><img src="./public/img/ig.svg" alt="" /></a></li>
+                </ul>
+              </li>
+              <li class="fans col-md-3 col-6">
+                <div>
+                  <p>FACEBOOK粉絲團</p>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <p class="col-12 copyright">© 2021 RINGO ALL RIGHTS RESERVED.</p>
     </footer>
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>

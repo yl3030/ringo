@@ -1,3 +1,12 @@
+// menu
+$(".menu").click(function(){
+    if($(this).parents("header").children(".container").children("nav").hasClass("active")){
+        $(this).parents("header").children(".container").children("nav").removeClass("active")
+    }else {
+        $(this).parents("header").children(".container").children("nav").addClass("active");
+    }
+})
+
 // check box
 $(".check").click(function(){
     if($(this).hasClass("active")){
@@ -53,4 +62,9 @@ $(".tab").children("button").click(function(){
         $(".member-form.login").hide();
         $(".member-form.signup").show();
     }
+})
+
+// discount
+$(".d-title").click(function(){
+    $(this).parents(".discount").children(".d-input").slideDown(300).css("display","flex");
 })

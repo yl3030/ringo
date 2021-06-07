@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
 
-
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
@@ -78,11 +77,11 @@
     <div class="sb">
       <div class="step-box d-flex">
         <div class="step">
-            <div class="num-box active">1</div>
+            <div class="num-box">1</div>
             <p>購物車</p>
         </div>
         <div class="step">
-            <div class="num-box">2</div>
+            <div class="num-box active">2</div>
             <p>填寫資料</p>
         </div>
         <div class="step">
@@ -91,12 +90,17 @@
         </div>
       </div>
     </div>
+  </main>
 
-    <div class="container">
+    <div class="container step2">
       <div class="row">
         <div class="col-12">
           <div class="cart-content">
-            <h4 class="cart-title">購物車（1件）</h4>
+            <p class="total-price">合計 NT3,880</p>
+            <div class="ct-box">
+                <span>購物車（1件）</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
             <div class="order-table ot-pc">
               <div class="title-box table-box d-flex">
                 <div><p>商品名稱</p></div>
@@ -104,7 +108,6 @@
                 <div><p>價格</p></div>
                 <div><p>數量</p></div>
                 <div><p>小計</p></div>
-                <div><p>刪除</p></div>
               </div>
               <div class="content-box table-box d-flex">
                 <div><p>
@@ -127,9 +130,6 @@
                   </div>
                 </div>
                 <div><p>NT 3980</p></div>
-                <div><p>
-                  <img src="./public/img/trash-can.svg" alt="">
-                </p></div>
               </div>
             </div>
             <div class="order-table ot-mobile">
@@ -137,14 +137,13 @@
                 <div><p>商品名稱</p></div>
               </div>
               <div class="content-box table-box d-flex row_1">
-                <div class="prod"><p>
+                <div><p>
                   <div class="d-flex p-3">
                     <div class="pic" style="background-image: url(./public/img/product.png);"></div>
                     <span>活顏粹蘋靚眼精華</span>
                   </div>
                 </p></div>
               </div>
-
               <div class="title-box table-box d-flex row_2">
                 <div><p>優惠</p></div>
                 <div><p>價格</p></div>
@@ -153,11 +152,9 @@
                 <div><p></p></div>
                 <div><p>NT 3980</p></div>
               </div>
-
               <div class="title-box table-box d-flex row_3">
                 <div><p>數量</p></div>
                 <div><p>小計</p></div>
-                <div><p>刪除</p></div>
               </div>
               <div class="content-box table-box d-flex row_3">
                 <div>
@@ -172,125 +169,109 @@
                   </div>
                 </div>
                 <div><p>NT 3980</p></div>
-                <div><p>
-                  <img src="./public/img/trash-can.svg" alt="">
-                </p></div>
               </div>
             </div>
             <div class="bonus">
               <p>已享用之優惠</p>
               <div class="bonus-content">
-              <div class="b-title">滿額優惠</div><span>滿3000送300點數</span>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 buy-inform">
-          <div class="cart-content">
-            <h4 class="cart-title">選擇付款方式</h4>
-            <div class="method-box">
-              <h5>送貨方式</h5>
-              <select>
-                <option value="7-11取貨付款">7-11取貨付款</option>
-                <option value="宅配">宅配</option>
-              </select>
-              <div class="desc-box">
-                <p>※ 購物滿1000元(折扣後金額)即享免運費，未滿1000元需自付運費80元</p>
-                <p>&nbsp;</p>
-                <p>※ 出貨後約2-3日抵達指定超商門市。</p>
-                <p>&nbsp;</p>
-                <p>包裹配達指定門市系統會自動發出簡訊通知</p>
-                <p>&nbsp;</p>
-                <p>※ 取貨時請務必攜帶與收件人姓名相符證件方能領取包裹</p>
+                <div class="b-title">滿額優惠</div><span>滿3000送300點數</span>
               </div>
             </div>
-            <div class="method-box">
-              <h5>付款方式</h5>
-              <select>
-                <option value="信用卡">信用卡</option>
-                <option value="ATM轉帳">ATM轉帳</option>
-              </select>
-              <div class="desc-box">
-                <p>為保障買賣雙方交易安全，於Ringo官網使用信用卡消費，必須通過</p>
-                <p>&nbsp;</p>
-                <p>簡訊發送「網路交易3D安全驗證」，輸入完成才可完成購物消費。</p>
-                <p>&nbsp;</p>
-                <p>※提醒：</p>
-                <p>&nbsp;</p>
-                <p>① 若您一直無法通過3D驗證碼，請您與您的發卡銀行聯繫確認卡片狀態。</p>
-                <p>&nbsp;</p>
-                <p>② 結帳時未完成3D驗證，執行付款動作，約1小時後系統將自動取消該筆訂單。</p>
-                <p>&nbsp;</p>
-                <p>③ 刷卡系統每日凌晨12點例行系統維護，請顧客盡量避開該時段結帳，避免刷卡失敗影響會員購物權益。</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 buy-inform">
-          <div class="cart-content">
-          <h4 class="cart-title">訂單資訊</h4>
-          <div>
-            <div class="total d-flex">
-              <h5>小計</h5>
-              <p>NT3,980</p>
-            </div>
-            <div class="discount">
-              <div class="d-flex">
-                <h5 class="d-title">折抵購物金</h5>
-                <div>
-                  <p>-NT$100 購物金<br>購物金餘額 NT 0</p>
+            <hr>
+            <div class="money-inform">
+                <div class="d-flex">
+                    <span>小計</span>
+                    <span>NT3,980</span>
                 </div>
-              </div>
-              <div class="d-input">
-                <input type="text">
-                <button>套用</button>
-              </div>
+                <div class="d-flex">
+                    <span>折抵購物金</span>
+                    <span>-NT$100 購物金</span>
+                </div>
+                <div class="d-flex">
+                    <span>運費</span>
+                    <span>NT 0</span>
+                </div>
+                <div class="d-flex total-price">
+                    <span>合計</span>
+                    <span>NT3,880</span>
+                </div>
+                <div class="d-flex">
+                    <span>付款後獲得購物點數</span>
+                    <span>+ NT300 購物點數</span>
+                </div>
             </div>
           </div>
-          <div>
-            <div class="total d-flex">
-              <h5>運費</h5>
-              <p>NT 0</p>
+        </div>
+        <div class="col-md-6 col-12 buy-inform">
+          <div class="cart-content client">
+            <h4 class="cart-title">顧客資料</h4>
+            <div class="inform-box">
+                <label>顧客名稱</label>
+                <input type="text" value="Alex">
             </div>
-            <div class="discount">
-              <h5 class="d-title">使用折扣碼</h5>
-              <div class="d-input">
-                <input type="text">
-                <button>套用</button>
-              </div>
+            <div class="inform-box">
+                <label>電子信箱</label>
+                <input type="email" value="Alex79924@gmail.com">
             </div>
-            <div class="discount">
-              <h5 class="d-title">使用點數折抵</h5>
-              <div class="d-input">
+            <div class="inform-box">
+                <label>電話號碼</label>
+                <input type="number" value="0989-336-280">
+            </div>
+          </div>
+          <div class="cart-content">
+            <h4 class="cart-title">索取發票</h4>
+            <div class="inform-box">
+                <label>發票類型</label>
                 <select>
-                  <option value="兌換花藝課程扣點數3000點">兌換花藝課程扣點數3000點</option>
+                    <option value="雲端發票">雲端發票</option>
                 </select>
-                <button>套用</button>
-              </div>
             </div>
-          </div>
-          <div class="checkout">
-            <div class="d-flex">
-              <h5>合計</h5>
-              <p>NT3,880</p>
-            </div>
-            <button><a href="./writing-data.html">前 往 結 帳</a></button>
-            <div class="d-flex">
-              <p>付款後獲得購物點數</p>
-              <p>+ NT300 購物點數</p>
+            <div class="inform-box">
+                <label>載具類型</label>
+                <select>
+                    <option value="會員載具（發票資訊會郵寄到您的信箱）">會員載具（發票資訊會郵寄到您的信箱）</option>
+                </select>
             </div>
           </div>
         </div>
-        </div>
-        <div class="col-12">
+        <div class="col-md-6 col-12 buy-inform">
+          <div class="cart-content">
+            <h4 class="cart-title">送貨資料</h4>
+            <div class="inform-box">
+                <label>送貨地點</label>
+                <select>
+                    <option value="台北市">台北市</option>
+                </select>
+                <p>已選擇的送貨方式: 7-11 取貨(不付款)</p>
+                <button>搜 尋 門 市</button>
+                <div class="check d-flex">
+                    <div class="check-box">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <span>收件人資料與顧客資料相同</span>
+                </div>
+            </div>
+            <div class="inform-box">
+                <label>收件人名稱</label>
+                <input type="text" value="Alex">
+                <p>※ 請填入收件人真實姓名，以確保順利收件</p>
+            </div>
+            <div class="inform-box">
+                <label>收件人電話</label>
+                <input type="number" value="0989-336-280">
+            </div>
+          </div>
           <div class="cart-content remark">
             <p>※ 註冊會員立即送 $100 購物金，首次消費即可使用！</p>
             <p>※ 索取紙本發票，出貨後約7-10個工作天以平信方式寄出。</p>
           </div>
+          <div class="cart-content btn-box">
+            <button class="submit"><a href="./order-check.html">提 交 訂 單</a></button>
+            <button class="back"><a href="./cart.html">返 回 購 物 車</a></button>
+          </div>
         </div>
     </div>
   </div>
-</main>
 
     <!-- footer -->
     <footer>

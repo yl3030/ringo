@@ -22,21 +22,37 @@
           <img class="logo" src="./public/img/logo.png" alt="Ringo" />
         </a>
         <nav>
-          <ul class="d-flex">
-            <li><a href="#">活顏翠蘋靚眼精華</a></li>
-            <li><a href="#">品牌故事</a></li>
-            <li class="active"><a href="#">點數兌換</a></li>
-            <li><a href="#">會員中心</a></li>
+          <ul class="icon">
+            <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
+            <!-- <a href="./join-member.html"><img src="./public/img/user.svg" alt="" /></a> -->
+            <a href="./join-member.html"><img src="./public/img/user-active.svg" alt="" /></a>
+            <div class="cart-box">
+              <a href="./cart.html">
+                <img src="./public/img/cart.svg" alt="" />
+                <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
+                <!-- <div class="buy-num">1</div> -->
+              </a>
+            </div>
+            <a href="#">
+              <img src="./public/img/earth.svg" alt="" />
+              <span>繁體中文</span>
+            </a>
+          </ul>
+          <ul class="navi d-flex">
+            <li><a href="./pruduct-introduce.html">活顏翠蘋靚眼精華</a></li>
+            <li><a href="./story.html">品牌故事</a></li>
+            <li><a href="./point-content.html">點數兌換</a></li>
+            <li class="active"><a href="./join-member.html">會員中心</a></li>
           </ul>
         </nav>
         <div class="right">
           <div class="icon-box">
             <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
-            <!-- <a href="#"><img src="./public/img/user.svg" alt="" /></a> -->
-            <a href="#"><img src="./public/img/user-active.svg" alt="" /></a>
+            <!-- <a href="./join-member.html"><img src="./public/img/user.svg" alt="" /></a> -->
+            <a href="./join-member.html"><img src="./public/img/user-active.svg" alt="" /></a>
             <div class="cart-box">
-              <a href="#"
-                ><img src="./public/img/cart.svg" alt="" />
+              <a href="./cart.html">
+                <img src="./public/img/cart.svg" alt="" />
                 <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
                 <!-- <div class="buy-num">1</div> -->
               </a>
@@ -46,6 +62,7 @@
               <span>繁體中文</span>
             </a>
           </div>
+          <i class="fas fa-bars menu"></i>
           <form class="search d-flex">
             <input type="text" placeholder="搜尋" />
             <button>
@@ -56,77 +73,75 @@
       </div>
     </header>
 
+    <main>
     <div class="term-box">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3 col-12 mb-md-0 mb-3">
             <ul class="list-box">
               <li class="list-title">會員中心</li>
-              <li><a href="#">加入會員</a></li>
-              <li><a href="#">忘記密碼</a></li>
-              <li><a href="#">訂單點數查詢</a></li>
-              <li class="active"><a href="#">會員條款</a></li>
-              <li><a href="#">隱私權政策</a></li>
+              <li><a href="./join-member.html">加入會員</a></li>
+              <li><a href="./forget-password.html">忘記密碼</a></li>
+              <li><a href="./point-check.html">訂單點數查詢</a></li>
+              <li class="active"><a href="./member-term.html">會員條款</a></li>
+              <li><a href="./privacy.html">隱私權政策</a></li>
             </ul>
           </div>
-          <div class="col-9">
+          <div class="col-md-9 col-12">
             <div class="tb">
               <h1 class="content-title">會員條款</h1>
               <div class="text-box">
-              <p>
-                當會員完成「RINGO」(下稱本站)之會員註冊手續、或開始使用本服務時，即表示已閱讀、瞭解並同意接受本服務條款之所有內容，並完全接受本服務現有與未來衍生的服務項目及內容。
-                本站有權於任何時間修改或變更本服務條款之內容，修改後的服務條款內容將公佈網站上，將不會個別通知會員，建議會員隨時注意該等修改或變更。會員於任何修改或變更後繼續使用本服務時，視為會員已閱讀、瞭解並同意接受該等修改或變更。若不同意上述的服務條款修訂或更新方式，或不接受本服務條款的其他任一約定，會員應立即停止使用本服務。
-              </p>
-            </div>
+                <p>
+                  當會員完成「RINGO」(下稱本站)之會員註冊手續、或開始使用本服務時，即表示已閱讀、瞭解並同意接受本服務條款之所有內容，並完全接受本服務現有與未來衍生的服務項目及內容。
+                  本站有權於任何時間修改或變更本服務條款之內容，修改後的服務條款內容將公佈網站上，將不會個別通知會員，建議會員隨時注意該等修改或變更。會員於任何修改或變更後繼續使用本服務時，視為會員已閱讀、瞭解並同意接受該等修改或變更。若不同意上述的服務條款修訂或更新方式，或不接受本服務條款的其他任一約定，會員應立即停止使用本服務。
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </main>
 
     <!-- footer -->
     <footer>
       <div class="container">
-        <div class="row">
-          <nav class="col-9">
             <ul class="row footer-nav">
-              <li class="col-4">
+              <li class="col-md-3 col-6">
                 <h5>會員中心</h5>
                 <ul>
-                  <li><a href="#">訂單查詢</a></li>
-                  <li><a href="#">忘記密碼</a></li>
-                  <li class="active"><a href="#">會員條款</a></li>
-                  <li><a href="#">隱私權政策</a></li>
+                  <li><a href="./order-check.html">訂單查詢</a></li>
+                  <li><a href="./forget-password.html">忘記密碼</a></li>
+                  <li class="active"><a href="./member-term.html">會員條款</a></li>
+                  <li><a href="./privacy.html">隱私權政策</a></li>
                 </ul>
               </li>
-              <li class="col-4">
+              <li class="col-md-3 col-6">
                 <h5>購物須知</h5>
                 <ul>
-                  <li><a href="#">付款方式</a></li>
-                  <li><a href="#">運送方式</a></li>
-                  <li><a href="#">售後服務</a></li>
-                  <li><a href="#">常見問題Q&A</a></li>
+                  <li><a href="./pay-method.html">付款方式</a></li>
+                  <li><a href="./delivery-method.html">運送方式</a></li>
+                  <li><a href="./service.html">售後服務</a></li>
+                  <li><a href="./QA.html">常見問題Q&A</a></li>
                 </ul>
               </li>
-              <li class="col-4">
+              <li class="col-md-3 col-6">
                 <h5>聯絡我們</h5>
                 <p>service@email.com</p>
                 <ul class="d-flex">
-                  <li><img src="./public/img/fb.svg" alt="" /></li>
-                  <li><img src="./public/img/line.svg" alt="" /></li>
-                  <li><img src="./public/img/ig.svg" alt="" /></li>
+                  <li><a href="#"><img src="./public/img/fb.svg" alt="" /></a></li>
+                  <li><a href="#"><img src="./public/img/line.svg" alt="" /></a></li>
+                  <li><a href="#"><img src="./public/img/ig.svg" alt="" /></a></li>
                 </ul>
+              </li>
+              <li class="fans col-md-3 col-6">
+                <div>
+                  <p>FACEBOOK粉絲團</p>
+                </div>
               </li>
             </ul>
           </nav>
-          <div class="fans col-3">
-            <div>
-              <p>FACEBOOK粉絲團</p>
-            </div>
-          </div>
           <p class="col-12 copyright">© 2021 RINGO ALL RIGHTS RESERVED.</p>
-        </div>
-      </div>
     </footer>
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>

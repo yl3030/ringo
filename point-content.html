@@ -22,21 +22,37 @@
           <img class="logo" src="./public/img/logo.png" alt="Ringo" />
         </a>
         <nav>
-          <ul class="d-flex">
-            <li><a href="#">活顏翠蘋靚眼精華</a></li>
-            <li><a href="#">品牌故事</a></li>
-            <li class="active"><a href="#">點數兌換</a></li>
-            <li><a href="#">會員中心</a></li>
+          <ul class="icon">
+            <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
+            <a href="./join-member.html"><img src="./public/img/user.svg" alt="" /></a>
+            <!-- <a href="./join-member.html"><img src="./public/img/user-active.svg" alt="" /></a> -->
+            <div class="cart-box">
+              <a href="./cart.html">
+                <img src="./public/img/cart.svg" alt="" />
+                <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
+                <!-- <div class="buy-num">1</div> -->
+              </a>
+            </div>
+            <a href="#">
+              <img src="./public/img/earth.svg" alt="" />
+              <span>繁體中文</span>
+            </a>
+          </ul>
+          <ul class="navi d-flex">
+            <li><a href="./pruduct-introduce.html">活顏翠蘋靚眼精華</a></li>
+            <li><a href="./story.html">品牌故事</a></li>
+            <li class="active"><a href="./point-content.html">點數兌換</a></li>
+            <li><a href="./join-member.html">會員中心</a></li>
           </ul>
         </nav>
         <div class="right">
           <div class="icon-box">
             <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
-            <!-- <a href="#"><img src="./public/img/user.svg" alt="" /></a> -->
-            <a href="#"><img src="./public/img/user-active.svg" alt="" /></a>
+            <a href="./join-member.html"><img src="./public/img/user.svg" alt="" /></a>
+            <!-- <a href="./join-member.html"><img src="./public/img/user-active.svg" alt="" /></a> -->
             <div class="cart-box">
-              <a href="#"
-                ><img src="./public/img/cart.svg" alt="" />
+              <a href="./cart.html">
+                <img src="./public/img/cart.svg" alt="" />
                 <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
                 <!-- <div class="buy-num">1</div> -->
               </a>
@@ -46,6 +62,7 @@
               <span>繁體中文</span>
             </a>
           </div>
+          <i class="fas fa-bars menu"></i>
           <form class="search d-flex">
             <input type="text" placeholder="搜尋" />
             <button>
@@ -56,24 +73,25 @@
       </div>
     </header>
 
+    <main>
     <div class="point">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3 col-12 mb-md-0 mb-3">
             <ul class="list-box">
               <li class="list-title">點數兌換</li>
-              <li class="active"><a href="#">兌換內容</a></li>
-              <li><a href="#">點數兌換方式</a></li>
+              <li class="active"><a href="./point-content.html">兌換內容</a></li>
+              <li><a href="./point-method.html">點數兌換方式</a></li>
             </ul>
           </div>
-          <div class="col-9">
+          <div class="col-md-9 col-12">
             <div class="point-box">
               <div class="point-title d-flex">
                 <div class="text">
                   Alex 您好<br />
                   目前持有點為3,000點
                 </div>
-                <button>我要兌換</button>
+                <button><a href="./cart.html">我要兌換</a></button>
               </div>
               <div class="point-content">
                 <div
@@ -122,50 +140,47 @@
         </div>
       </div>
     </div>
+  </main>
 
     <!-- footer -->
     <footer>
       <div class="container">
-        <div class="row">
-          <nav class="col-9">
             <ul class="row footer-nav">
-              <li class="col-4">
+              <li class="col-md-3 col-6">
                 <h5>會員中心</h5>
                 <ul>
-                  <li><a href="#">訂單查詢</a></li>
-                  <li><a href="#">忘記密碼</a></li>
-                  <li><a href="#">會員條款</a></li>
-                  <li><a href="#">隱私權政策</a></li>
+                  <li><a href="./order-check.html">訂單查詢</a></li>
+                  <li><a href="./forget-password.html">忘記密碼</a></li>
+                  <li><a href="./member-term.html">會員條款</a></li>
+                  <li><a href="./privacy.html">隱私權政策</a></li>
                 </ul>
               </li>
-              <li class="col-4">
+              <li class="col-md-3 col-6">
                 <h5>購物須知</h5>
                 <ul>
-                  <li><a href="#">付款方式</a></li>
-                  <li><a href="#">運送方式</a></li>
-                  <li><a href="#">售後服務</a></li>
-                  <li><a href="#">常見問題Q&A</a></li>
+                  <li><a href="./pay-method.html">付款方式</a></li>
+                  <li><a href="./delivery-method.html">運送方式</a></li>
+                  <li><a href="./service.html">售後服務</a></li>
+                  <li><a href="./QA.html">常見問題Q&A</a></li>
                 </ul>
               </li>
-              <li class="col-4">
+              <li class="col-md-3 col-6">
                 <h5>聯絡我們</h5>
                 <p>service@email.com</p>
                 <ul class="d-flex">
-                  <li><img src="./public/img/fb.svg" alt="" /></li>
-                  <li><img src="./public/img/line.svg" alt="" /></li>
-                  <li><img src="./public/img/ig.svg" alt="" /></li>
+                  <li><a href="#"><img src="./public/img/fb.svg" alt="" /></a></li>
+                  <li><a href="#"><img src="./public/img/line.svg" alt="" /></a></li>
+                  <li><a href="#"><img src="./public/img/ig.svg" alt="" /></a></li>
                 </ul>
+              </li>
+              <li class="fans col-md-3 col-6">
+                <div>
+                  <p>FACEBOOK粉絲團</p>
+                </div>
               </li>
             </ul>
           </nav>
-          <div class="fans col-3">
-            <div>
-              <p>FACEBOOK粉絲團</p>
-            </div>
-          </div>
           <p class="col-12 copyright">© 2021 RINGO ALL RIGHTS RESERVED.</p>
-        </div>
-      </div>
     </footer>
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
