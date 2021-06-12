@@ -1827,9 +1827,6 @@ footer .copyright {
   .cart-content .money-inform {
     width: 100%;
   }
-  .buy-inform {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (max-width: 450px) {
