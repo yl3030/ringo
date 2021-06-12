@@ -150,18 +150,21 @@ header {
         }
       }
       .navi {
+        justify-content: start;
         li {
-          width: 25%;
           height: 100%;
-          text-align: center;
           a {
             display: block;
             line-height: 50px;
+            padding: 0 20px;
           }
           &.active {
             a {
               color: $main-color;
             }
+          }
+          &.mobile-nav {
+            display: none;
           }
         }
       }
@@ -195,15 +198,15 @@ header {
         overflow: hidden;
         input {
           color: #666666;
-          width: calc(100% - 35px);
+          width: calc(100% - 45px);
           height: 35px;
           border: 0;
           padding: 0 15px;
         }
         button {
-          width: 35px;
+          width: 45px;
           img {
-            width: 90%;
+            width: 20px;
           }
         }
       }
@@ -1429,11 +1432,6 @@ footer {
         }
         .search {
           margin-top: 50px;
-          button {
-            img {
-              width: 25px;
-            }
-          }
         }
       }
     }
@@ -1479,10 +1477,29 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  header {
+    .container {
+      nav {
+        .navi {
+          li {
+            &.mobile-nav {
+              display: block;
+            }
+          } 
+        } 
+      } 
+    } 
+  } 
   footer {
     .footer-nav {
       > li {
         margin-bottom: 20px;
+      }
+      >li:first-child {
+        display: none;
+      }
+      >li:nth-child(2) {
+        display: none;
       }
     }
   }
