@@ -18,32 +18,30 @@
     <!-- header -->
     <header>
       <div class="container position-relative">
+        <div class="mobile-icon">
+          <i class="fas fa-bars menu"></i>
+          <img class="search" src="./public/img/search.svg" alt="" />
+        </div>
+        <div class="mobile-search">
+          <form class="d-flex container">
+            <img src="./public/img/search.svg" alt="" />
+            <input type="text" placeholder="搜尋">
+          </form>
+        </div>
         <a href="./index.html">
           <img class="logo" src="./public/img/logo.png" alt="Ringo" />
         </a>
         <nav>
-          <ul class="icon">
-            <a href="#"><img src="./public/img/heart.svg" alt="" /></a>
-            <a href="./join-member.html"><img src="./public/img/user.svg" alt="" /></a>
-            <!-- <a href="./join-member.html"><img src="./public/img/user-active.svg" alt="" /></a> -->
-            <div class="cart-box">
-              <a href="./cart.html">
-                <img src="./public/img/cart.svg" alt="" />
-                <!-- <img src="./public/img/cart-active.svg" alt="" /> -->
-                <!-- <div class="buy-num">1</div> -->
-              </a>
-            </div>
-            <a href="#">
-              <img src="./public/img/earth.svg" alt="" />
-              <span>繁體中文</span>
-            </a>
-          </ul>
           <ul class="navi d-flex">
             <li class="active"><a href="./pruduct-introduce.html">活顏翠蘋靚眼精華</a></li>
             <li><a href="./story.html">品牌故事</a></li>
             <li><a href="./point-content.html">點數兌換</a></li>
             <li><a href="./join-member.html">會員中心</a></li>
             <li class="mobile-nav"><a href="./pay-method.html">購物須知</a></li>
+            <li class="mobile-nav lang"><a href="#">
+              <img src="./public/img/earth.svg" alt="" />
+              <span>繁體中文</span>
+            </a></li>
           </ul>
         </nav>
         <div class="right">
@@ -58,13 +56,12 @@
                 <!-- <div class="buy-num">1</div> -->
               </a>
             </div>
-            <a href="#">
+            <a href="#" class="lang">
               <img src="./public/img/earth.svg" alt="" />
               <span>繁體中文</span>
             </a>
           </div>
-          <i class="fas fa-bars menu"></i>
-          <form class="search d-flex">
+          <form class="search">
             <input type="text" placeholder="搜尋" />
             <button>
               <img src="./public/img/search.svg" alt="" />

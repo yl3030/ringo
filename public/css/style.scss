@@ -125,6 +125,48 @@ header {
   z-index: 1;
   .container {
     height: 100%;
+    .mobile-icon {
+      display: none;
+      position: absolute;
+      width: 30%;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      line-height: 1;
+      img {
+        width: 25px;
+        vertical-align: middle;
+        margin: 0 5px;
+      }
+      .menu {
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px;
+      }
+    }
+    .mobile-search {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 15px 20px;
+      display: none;
+      form {
+        border-bottom: 1px solid #000;
+        img {
+          width: 20px;
+        }
+        input {
+          width: calc(100% - 30px);
+          border: 0;
+        }
+      }
+    }
     .logo {
       height: 100px;
       position: absolute;
@@ -139,16 +181,6 @@ header {
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      .icon {
-        display: none;
-        .cart-box {
-          .buy-num {
-            bottom: inherit;
-            top: 30px;
-            right: 30%;
-          }
-        }
-      }
       .navi {
         justify-content: start;
         li {
@@ -165,6 +197,17 @@ header {
           }
           &.mobile-nav {
             display: none;
+            &.lang {
+              line-height: 1;
+              img {
+                width: 20px;
+                vertical-align: middle;
+                margin-right: 3px;
+              }
+              span {
+                vertical-align: middle;
+              }
+            }
           }
         }
       }
@@ -183,19 +226,14 @@ header {
           margin: 0 5px;
         }
       }
-      .menu {
-        font-size: 20px;
-        margin-top: 35px;
-        cursor: pointer;
-        float: right;
-        display: none;
-      }
+      
       .search {
         margin-top: 40px;
         width: 100%;
         border: 1px solid #666666;
         border-radius: 100px;
         overflow: hidden;
+        @include flex-style;
         input {
           color: #666666;
           width: calc(100% - 45px);
@@ -1371,70 +1409,71 @@ footer {
     padding-top: 40px;
   }
   header {
-    height: 100px;
+    height: 80px;
+    border-bottom: 1px solid rgb(133, 133, 133);
     .container {
+      .mobile-icon {
+        display: inline-block;
+      }
       .logo {
-        height: 70px;
-        left: 15px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
       }
       nav {
         position: fixed;
-        top: 100px;
-        left: 100vw;
+        top: 80px;
+        left: -100vw;
         transform: none;
         background-color: #fff;
-        width: 100%;
-        height: calc(100vh - 100px);
+        width: 50%;
+        height: calc(100vh - 80px);
         z-index: 1;
         transition: 0.3s;
         &.active {
           left: 0;
         }
-        .icon {
-          display: flex;
-          > a {
-            width: 25%;
-            img {
-              width: 30%;
-              margin: 20px auto 5px;
-              display: block;
-            }
-            span {
-              display: block;
-              text-align: center;
-            }
-          }
-          .cart-box {
-            width: 25%;
-            img {
-              width: 30%;
-              margin: 20px auto 5px;
-              display: block;
-            }
-          }
-        }
         .navi {
           margin-top: 40px;
           li {
             width: 100%;
+            margin: 10px 0;
+            &.mobile-nav {
+              display: block;
+            }
+            a {
+              line-height: 1.3;
+            }
           }
         }
       }
       .right {
-        width: 50%;
+        width: 30%;
         right: 15px;
         .icon-box {
-          display: none;
+          justify-content: flex-end;
+          margin-top: 25px;
+          a {
+            display: inline-block;
+            margin: 0 5px;
+            &.lang {
+              display: none;
+            }
+          }
         }
         .menu {
           display: block;
           margin-top: 23px;
         }
         .search {
-          margin-top: 50px;
+          display: none;
         }
       }
     }
+  }
+  .banner {
+    margin-top: 80px;
   }
 }
 
@@ -1477,19 +1516,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  header {
-    .container {
-      nav {
-        .navi {
-          li {
-            &.mobile-nav {
-              display: block;
-            }
-          } 
-        } 
-      } 
-    } 
-  } 
   footer {
     .footer-nav {
       > li {
@@ -1502,9 +1528,6 @@ footer {
         display: none;
       }
     }
-  }
-  .banner {
-    margin-top: 100px;
   }
   .title {
     font-size: 30px;
@@ -1710,12 +1733,48 @@ footer {
       width: 100%;
     }
   }
-  .buy-inform {
-    // margin-bottom: 0;
-  }
 }
 
 @media screen and (max-width: 450px) {
+  header {
+    height: 60px;
+    .container {
+      .mobile-icon {
+        left: 5px;
+        img {
+          width: 20px;
+        }
+        .menu {
+          width: 20px;
+          height: 20px;
+          font-size: 20px;
+        }
+      }
+      .mobile-search {
+        top: 60px;
+      }
+      .logo {
+        height: 40px;
+      }
+      nav {
+        top: 60px;
+        height: calc(100vh - 60px);
+      }
+      .right {
+        right: 5px;
+        .icon-box {
+          margin-top: 15px;
+          img {
+            width: 20px;
+            margin: 0 3px;
+          }
+        } 
+      } 
+    } 
+  } 
+  .banner {
+    margin-top: 60px;
+  }
   .cart-content {
     padding: 15px;
     .order-table {

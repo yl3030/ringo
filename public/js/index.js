@@ -6,6 +6,9 @@ $(".menu").click(function(){
         $(this).parents("header").children(".container").children("nav").addClass("active");
     }
 })
+$(".mobile-icon .search").click(function(){
+    $(".mobile-search").slideToggle(300);
+})
 
 // check box
 $(".check").click(function(){
